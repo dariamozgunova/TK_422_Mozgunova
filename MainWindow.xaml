@@ -1,0 +1,23 @@
+﻿<Window x:Class="TK.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TK"
+        mc:Ignorable="d"
+        Title="Вариант 2" Height="350" Width="600">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Введите баллы за модули:" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="9,34,0,0" TextWrapping="Wrap" Text="Баллы за первый модуль (максимум 22 балла):" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="9,65,0,0" TextWrapping="Wrap" Text="Баллы за второй модуль (максимум 38 балла):" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,95,0,0" TextWrapping="Wrap" Text="Баллы за третий модуль (максимум 20 балла):" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="module1TextBox" HorizontalAlignment="Left" Margin="291,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="module2TextBox" HorizontalAlignment="Left" Margin="291,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="module3TextBox" HorizontalAlignment="Left" Margin="291,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Button Content="Рассчитать" HorizontalAlignment="Left" Margin="229,135,0,0" VerticalAlignment="Top" FontSize="14" Height="32" Width="122" x:Name="calculateButton" Click="CalculateButton_Click"/>
+        <TextBlock x:Name="gradeText" FontSize="14" Width="236" Margin="10,167,354,125"/>
+        <TextBlock x:Name="totalScoreText" FontSize="14" Width="236" Margin="10,209,354,80"/>
+    </Grid>
+</Window>
